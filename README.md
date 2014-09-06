@@ -1,8 +1,7 @@
-Heroku Buildpack for Node.js
-============================
+Heroku Buildpack for Node.js with sass
+======================================
 
-This is the official [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Node.js apps. If you fork this repository, please **update this README** to explain what your fork does and why it's special.
-
+Use sass easily with the node buildpack, runs v3.4.2 using ruby 1.9.
 
 How it Works
 ------------
@@ -42,7 +41,7 @@ Legacy Compatibility
 For most Node.js apps this buildpack should work just fine. If, however, you're unable to deploy using this new version of the buildpack, you can get your app working again by using the legacy branch:
 
 ```
-heroku config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-nodejs#legacy -a my-app
+heroku config:set BUILDPACK_URL=https://github.com/IyadAssaf/heroku-buildpack-nodejs-sass#legacy -a my-app
 git commit -am "empty" --allow-empty # force a git commit
 git push heroku master
 ```
