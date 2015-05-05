@@ -60,13 +60,13 @@ export RUBYOPT='-E utf-8'
 status "Installing Sass"
 export GEM_HOME=$build_dir/.gem/ruby/1.9.1
 PATH="$GEM_HOME/bin:$PATH"
-if test -d $cache_dir/ruby/.gem; then
-  status "Restoring ruby gems directory from cache"
-  cp -r $cache_dir/ruby/.gem $build_dir
-  HOME=$build_dir gem update sass -v 3.4.2 --user-install --no-rdoc --no-ri
-else
-  HOME=$build_dir gem install sass -v 3.4.2 --user-install --no-rdoc --no-ri
-fi
+# if test -d $cache_dir/ruby/.gem; then
+#   status "Restoring ruby gems directory from cache"
+#   cp -r $cache_dir/ruby/.gem $build_dir
+#   HOME=$build_dir gem update sass -v 3.4.2 --user-install --no-rdoc --no-ri
+# else
+HOME=$build_dir gem install sass --user-install --no-rdoc --no-ri
+# fi
 
 status "Sass installed, version: "
 
