@@ -74,13 +74,13 @@ sass --version
 
 # cache ruby gems sass
 rm -rf $cache_dir/ruby
-mkdir -p $cache_dir/ruby
+# mkdir -p $cache_dir/ruby
 
-# If app has a gems directory, cache it.
-if test -d $build_dir/.gem; then
-  status "Caching ruby gems directory for future builds"
-  cp -r $build_dir/.gem $cache_dir/ruby
-fi
+# # If app has a gems directory, cache it.
+# if test -d $build_dir/.gem; then
+#   status "Caching ruby gems directory for future builds"
+#   cp -r $build_dir/.gem $cache_dir/ruby
+# fi
 
 
 
