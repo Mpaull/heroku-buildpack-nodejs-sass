@@ -57,9 +57,11 @@ status "Setting ruby charset to UTF-8"
 export RUBYOPT='-E utf-8'
 
 # install sass
-status "Installing Sass (test)"
+status "Installing Sass"
 export GEM_HOME=$build_dir/.gem/ruby/1.9.1
+status "Set GEM_HOME"
 PATH="$GEM_HOME/bin:$PATH"
+status "Prepended GEM_HOME to PATH"
 # if test -d $cache_dir/ruby/.gem; then
 #   status "Restoring ruby gems directory from cache"
 #   cp -r $cache_dir/ruby/.gem $build_dir
