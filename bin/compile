@@ -61,6 +61,7 @@ status "Installing Sass"
 export GEM_HOME=$build_dir/.gem/ruby/1.9.1
 status "Set GEM_HOME"
 status $PATH
+status $GEM_HOME
 PATH="$GEM_HOME/bin:$PATH"
 status "Prepended GEM_HOME to PATH"
 # if test -d $cache_dir/ruby/.gem; then
