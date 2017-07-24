@@ -58,7 +58,7 @@ export RUBYOPT='-E utf-8'
 
 # install sass
 status "Installing Sass"
-export GEM_HOME=$build_dir/.gem/ruby/1.9.1
+export GEM_HOME=$build_dir/.gem/ruby/2.3.0
 status "Set GEM_HOME"
 status $PATH
 status $GEM_HOME
