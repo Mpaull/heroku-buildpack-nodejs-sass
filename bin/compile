@@ -67,7 +67,7 @@ status "Prepended GEM_HOME to PATH"
 #   cp -r $cache_dir/ruby/.gem $build_dir
 #   HOME=$build_dir gem update sass -v 3.4.2 --user-install --no-rdoc --no-ri
 # else
-HOME=$build_dir gem install sass --user-install --no-rdoc --no-ri
+gem install sass --user-install --no-rdoc --no-ri
 status "Run build_dir command"
 # fi
 
