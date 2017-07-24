@@ -60,6 +60,7 @@ export RUBYOPT='-E utf-8'
 status "Installing Sass"
 export GEM_HOME=$build_dir/.gem/ruby/1.9.1
 status "Set GEM_HOME"
+status $PATH
 PATH="$GEM_HOME/bin:$PATH"
 status "Prepended GEM_HOME to PATH"
 # if test -d $cache_dir/ruby/.gem; then
@@ -67,7 +68,7 @@ status "Prepended GEM_HOME to PATH"
 #   cp -r $cache_dir/ruby/.gem $build_dir
 #   HOME=$build_dir gem update sass -v 3.4.2 --user-install --no-rdoc --no-ri
 # else
-gem install sass --user-install --no-rdoc --no-ri
+HOME=$build_dir gem install sass --user-install --no-rdoc --no-ri
 status "Run build_dir command"
 # fi
 
